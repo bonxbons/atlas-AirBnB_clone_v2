@@ -6,6 +6,7 @@ A script that starts a Flask web application
 from flask import Flask, render_template
 from models import storage
 from models.state import State
+from sqlalchemy.orm import scoped_session, sessionmaker
 
 app = Flask(__name__)
 
